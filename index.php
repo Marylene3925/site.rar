@@ -210,6 +210,60 @@
                 </div>
             </div>
         </div><!-- end SLIDER -->
+
+        <div class="slider-section">
+            <div class="tp-banner-container">
+                <div class="tp-banner">
+                    <ul>
+                        <li data-transition="fade" data-slotamount="1" data-masterspeed="500" data-thumb="upload/slider_01.jpg"  data-saveperformance="off"  data-title="Vet">
+                            <img src="upload/slider_07.jpg"  alt="fullslide1"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                            <div class="tp-caption slider_layer_01 lft tp-resizeme"
+                                data-y="290" 
+                                data-x="500"
+                                data-speed="1000"
+                                data-start="600"
+                                data-easing="Power3.easeInOut"
+                                data-splitin="none"
+                                data-splitout="none"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                data-endspeed="1000"
+                                style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">Cabinet <span>Medon</span>
+                                à Paris
+                            </div>
+                            <div class="tp-caption slider_layer_02 lft tp-resizeme"
+                                data-y="390" 
+                                data-x="510"
+                                data-speed="1600"
+                                data-start="1000"
+                                data-easing="Power3.easeInOut"
+                                data-splitin="none"
+                                data-splitout="none"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                data-endspeed="1000"
+								style="color:#FFFFFF; z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">Depuis 2001, le cabinet Medon intervient en expertise-comptable <br>et en commissariat aux comptes sur Lyon.
+                            </div>
+                            <div class="tp-caption slider_btn lft tp-resizeme"
+                                data-y="460" 
+                                data-x="510"
+                                data-speed="1600"
+                                data-start="1400"
+                                data-easing="Power3.easeInOut"
+                                data-splitin="none"
+                                data-splitout="none"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                data-endspeed="1000"
+                                style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;"><a href="#cabinet" class="btn btn-primary" data-text="More Info"><span>Découvrez notre cabinet</span></a> 
+                            </div>
+                        </li>
+                     
+                      
+                    </ul>
+                </div>
+            </div>
+        </div><!-- end SLIDER -->
 		
 		
 		  <section id="cabinet" class="section white">
