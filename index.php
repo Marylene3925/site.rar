@@ -662,29 +662,47 @@
     <!-- MAP & CONTACT -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBswfZFa8_vUQJZN07vMouN16m_ltr7u-Y"></script>
     
-    
-	
+    	
 	
 	<script type="text/javascript">
-        
+            
 		function initialize() {
 			var mapOptions = {
-				zoom: 12,
+				zoom: 6,
 				scrollwheel: false,
 				center: new google.maps.LatLng( 48.859848, 2.339590 )
-			};
-
+            };
+            
+        
+            
 			var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
 			
 			var infowindow = new google.maps.InfoWindow({
 				content: "<h3>Paris</h3>"
-			});
+                          
+            
+            });
+
+            var infowindow = new google.maps.InfoWindow({
+				content: "<h3>Lyon</h3>"
+                + '<img src="images/marker2.png">'           
+            
+            });
+            
+                        		
 			
 			var marker = new google.maps.Marker({
 				//position: map.getCenter(),
 				position: {lat:  48.859848,   lng: 2.339590},
-				
+            	       
+				map: map
+            });
+            
+            var marker = new google.maps.Marker({
+				//position: map.getCenter(),				
+                 position: {lat:  45.764043,   lng: 4.835659}, 
+                          
 				map: map
 			});
 			
@@ -695,11 +713,13 @@
 			infowindow.open(map, marker);
 			
         }
+                               
+                        
+        google.maps.event.addDomListener(window, 'load', initialize);
 
-		google.maps.event.addDomListener(window, 'load', initialize);
 		
     </script>
-	
+
 	
 	
 	<script>
