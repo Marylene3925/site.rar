@@ -39,7 +39,7 @@ class cl_db_mysql {
 		if ($_SERVER["REMOTE_ADDR"] == '127.0.0.1' || $_SERVER["REMOTE_ADDR"] == '::1') { 			// CONFIG LOCAL
 			$this->user = "root";
 			$this->password = "";
-			$this->host = "localhost";
+			$this->host = "localhost:3308";
 			$this->database = "WebGroup_test";
 			$this->auto_free = 0;
 		}
@@ -57,7 +57,7 @@ class cl_db_mysql {
 	
 	/**
 	 * cl_db_mysql::getInstance()
-	 * @desc Implémentation du motif Singleton
+	 * @desc Implï¿½mentation du motif Singleton
 	 * $db = cl_db_mysql::getInstance();
 	 * @return
 	*/
@@ -73,14 +73,14 @@ class cl_db_mysql {
 	
 		
 	/**
-	* @desc public : envoie une requête sql à la base de données
+	* @desc public : envoie une requï¿½te sql ï¿½ la base de donnï¿½es
 	* @param string [Requete sql]
 	* @return query_id ou rien du tout
 	*/
 	public function query($sql) {
 		$this->query_id = mysqli_query($this->mysql_link, $sql);
 		
-		// Erreur dans la requête
+		// Erreur dans la requï¿½te
 		if (!$this->query_id) {
 			die("Erreur : " . mysqli_error($this->mysql_link));
 			
@@ -90,7 +90,7 @@ class cl_db_mysql {
 	}
 	
 	/**
-	* @desc Retourne le dernier ID généré par mysql
+	* @desc Retourne le dernier ID gï¿½nï¿½rï¿½ par mysql
 	* @param void
 	* @return int
 	*/
@@ -99,13 +99,13 @@ class cl_db_mysql {
 	}
 
 	/**
-	* @desc public : Passe à l'enregistrement suivant
+	* @desc public : Passe ï¿½ l'enregistrement suivant
 	* @param void
 	* @return boolean
 	*/
 	public function next_record() {
 		if (!$this->query_id) {
-      		die ("next_record() a été appelée sans aucune requête associée");
+      		die ("next_record() a ï¿½tï¿½ appelï¿½e sans aucune requï¿½te associï¿½e");
     	}
     	
     	$this->record = mysqli_fetch_array($this->query_id);
@@ -130,7 +130,7 @@ class cl_db_mysql {
 
 		if (is_array($data) && count($data) > 0) {
 
-			//boucle echapper caractères
+			//boucle echapper caractï¿½res
 			foreach ($data as $key => $tabEnreg) {
 
 				foreach ( $tabEnreg as $champ => $valeurChamp) {
@@ -151,7 +151,7 @@ class cl_db_mysql {
 	
 	
 	/**
-	* @desc public : Nombre de lignes affectées lors de la dernière requête SQL MYSQL
+	* @desc public : Nombre de lignes affectï¿½es lors de la derniï¿½re requï¿½te SQL MYSQL
 	* @param void
 	* @return integer
 	*/
@@ -160,7 +160,7 @@ class cl_db_mysql {
 	}
 	
 	/**
-	* @desc public : Retourne le nombre de lignes d'un résultat MYSQL
+	* @desc public : Retourne le nombre de lignes d'un rï¿½sultat MYSQL
 	* @param void
 	* @return integer
 	*/
@@ -169,7 +169,7 @@ class cl_db_mysql {
 	}
 	
 	/**
-	* @desc public : Retourne le nombre de champs d'un résultat MYSQL
+	* @desc public : Retourne le nombre de champs d'un rï¿½sultat MYSQL
 	* @param void
 	* @return integer
 	*/
@@ -192,7 +192,7 @@ class cl_db_mysql {
 	
 	
 	/**
-	* @desc Retourne une chaine échappée par la fonction mysqli_real_escape_string()
+	* @desc Retourne une chaine ï¿½chappï¿½e par la fonction mysqli_real_escape_string()
 	* @param string
 	* @return string
 	*/
