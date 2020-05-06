@@ -1,0 +1,10 @@
+php_value auto_prepend_file ./include/prepend.php
+
+php_value session.auto_start on
+php_value display_errors off
+
+
+
+
+php_value default_charset "UTF-8"
+

@@ -1,0 +1,204 @@
+/* ----------------------------------------------------
+	COLORS	
+------------------------------------------------------- */  
+
+	.pagination > li > a:hover, 
+	.pagination > li > span:hover,
+	.nav-tabs > li.active,
+	.nav-tabs > li:hover,
+	.nav-tabs > li:focus,
+	.blog-desc span,
+	.tags a:hover,
+	.nav-tabs > li > a.active,
+	.nav-tabs > li > a:hover,
+	.nav-tabs > li > a:focus,
+	.nav-tabs > li > a:active,
+	.bg1,
+	.accordion-toggle-2 .panel-title a,
+	.about-accordion .panel-title:hover i,
+	.blog-wrapper .datetime,
+	.shop-cart .fa-check,
+	.btn-default:hover,
+	.corner-ribbon.blue,
+	.bgblue,
+	#tab-style-2 .nav-tabs > li:focus a, 
+	#tab-style-2 .nav-tabs > li:hover a, 
+	#tab-style-2 .nav-tabs > li.active a,
+	.btn-default:focus,
+	.btn-black:hover,
+	p.drop-caps.full:first-child:first-letter,
+	.btn-black:focus,
+	.testimonial-style-4 hr,
+	.btn-theme,
+	.progress-bar,
+	.shop-item:hover .cart-button a,
+	.carousel-control .fa:hover,
+	.service-box h3 span,
+	.service-box:hover .icon-container,
+	.tp-rightarrow.default:hover,
+	.tp-rightarrow.default:focus,
+	.tp-leftarrow.default:hover,
+	.tp-leftarrow.default:focus,
+	.btn-primary,
+	.cartbutton .btn-primary {
+		background-color:#2896df !important;
+		border-color:#2896df !important;
+		color:#fff !important;
+	}
+
+	#testimonial-style-4 .owl-controls .owl-dots .owl-dot:hover span,
+	#testimonial-style-4 .owl-controls .owl-dots .owl-dot.active span,
+	#owl-testimonials-2 .owl-controls .owl-dots .owl-dot:hover span,
+	#owl-testimonials-2 .owl-controls .owl-dots .owl-dot.active span,
+	#owl-testimonials .owl-controls .owl-dots .owl-dot:hover span,
+	#owl-testimonials .owl-controls .owl-dots .owl-dot.active span,	
+	#owl-services .owl-controls .owl-dots .owl-dot:hover span,
+	#owl-services .owl-controls .owl-dots .owl-dot.active span,
+	.owl-custom .owl-controls .owl-nav [class*="owl-"]:hover,
+	.owl-custom .owl-controls .owl-nav [class*="owl-"]:focus,
+	.navbar-default .navbar-nav > li:hover > a,
+	.navbar-default .navbar-nav > li:focus > a,
+	.countbadge,
+	.navbar-default .nav > li > a.active,
+	.navbar-default .nav > li > a:hover,
+	.navbar-default .nav > li > a:focus,
+	.social a:hover{
+		background-color:#2896df;
+		border-color:#2896df;
+		color:#fff;
+	}
+
+	.navbar-default .dropdown-menu {
+		border-bottom-color: #2896df;
+	}
+
+	.testimonial-style-4 small,
+	.pricing-box h3,
+	.tp-caption.slider_layer_06 span, 
+	.slider_layer_06 span,
+	.tp-caption.slider_layer_05 span, 
+	.item blockquote p:before,
+	.slider_layer_05 span,
+	.tp-caption.slider_layer_02.blue-color,  
+	.slider_layer_02.blue-color,
+	.text-widget .lead a,
+	.tweet p a,
+	address i,
+	.latest-posts h4 a:hover,
+	#testimonial-style-3 small,
+	.blog-desc:hover .readmore,
+	.blog-desc:hover .readmore:after,
+	.blog-meta i,
+	.parallax-video-message h3 span,
+	.item blockquote p:after,
+	.big-message span,
+	#quote-carousel small,
+	.small-counts .stat-count,
+	.statwrap i,
+	.portfolio-filter li a.active,
+	.portfolio-filter li:hover a,
+	.testi-item h3 small,
+	.shop-buttons .dropdown-menu > li:hover a,
+	.visible-buttons i,
+	.service-box .alignleft,
+	.author-wrap a,
+	.rating i,
+	.icon-container,
+	.service-box .check li:before,
+	.categories li:hover a,
+	.testimonials-style-5 small,
+	.notfound a,
+	.post-bottom .prevnext a:hover,
+	.colors li a:hover,
+	.shop-cart-add p i,
+	.service-box:hover .readmore:after,
+	.service-box:hover .readmore,
+	.unlist-styles li i,
+	.total-price,
+	.big-title span,
+	.tp-caption.slider_layer_01 span, 
+	.slider_layer_01 span,
+	.top-details i {
+		color:#2896df;
+	}
+
+	.tagline-msg .btn-theme {
+		color:#2896df !important;
+	}
+	.bg2 {
+		background-color: #32a1ea;
+	}
+
+	.magnifier {
+		background: rgb(40,150,223);
+		background-color: rgba(40,150,223,0.8);
+	}
+
+	.pricing-box:hover,
+	.btn-primary:hover,
+	.btn-primary:focus,
+	.btn-black,
+	.btn-theme:focus,
+	.btn-theme:hover {
+		background-color: #222222 !important;
+		border-color: #222222 !important;
+		color:#ffffff !important;
+	}
+
+	.progress-bar.yellow {
+		background-color: #fbb840 !important;
+	}
+	.progress-bar.green {
+		background-color: #10bcb6 !important;
+	}
+	.progress-bar.red {
+		background-color: #f87860 !important;
+	}
+	.progress-bar.blue {
+		background-color: #2896df !important;
+	}
+	.topbar.dark-blue,
+	.dark-blue {
+		background-color: #005394
+	}
+
+	.topbar.dark-blue .btn-default,
+	.topbar.dark-blue .stylish-input-group .form-control,
+	.topbar.dark-blue .input-group-addon,
+	.topbar.dark-blue .social a {
+	    background-color: #075b9d !important;
+	    border-color: #075b9d !important;
+	}
+	#tab-style-3 .nav-tabs > li:focus a, 
+	#tab-style-3 .nav-tabs > li:hover a, 
+	#tab-style-3 .nav-tabs > li.active a {
+		color:#333 !important;
+		background-color: transparent !important;
+		border-top:2px solid #2896df !important;
+	}
+	#tab-style-left .nav-tabs > li.active a {
+		color:#2896df !important;
+	}
+	#tab-style-4 .nav-tabs > li:focus a, 
+	#tab-style-4 .nav-tabs > li:hover a, 
+	#tab-style-4 .nav-tabs > li.active a {
+		color:#333 !important;
+		background-color: #ffffff !important;
+	}
+	.testimonials-style-5 span {
+		background-color: transparent !important;
+	}
+
+
+
+#lmnp .service-box h3 {
+	font-size: 15px;
+}
+
+.topbar { position:fixed; left:0; top:0; width:100%; z-index:99999; padding:5px 0 0 0; }
+header.header  { position:fixed; left:0; top:30px; width:100%; z-index:99999; border-top:1px solid #f1f1f1; }
+.top-details { padding:0; }
+
+.actuALaUne *, .actuALaUne p { font-weight:bold; padding:0; line-height:1.5; padding-bottom:3px; }
+
+.topbar .text-right { line-height:1.5; padding-bottom:3px; }

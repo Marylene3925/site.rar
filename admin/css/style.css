@@ -1,0 +1,292 @@
+/****************************************************************************************
+ GÉNÉRALITÉS /DESIGN
+*******************************************************************************************/
+
+body {
+	
+	background:#eeebda url(../images/background.jpg) repeat-x fixed 0 0; 
+	
+	color:#000;
+	text-align:center;
+	font-family:arial, sans-serif; 
+	font-size:14px;
+	padding:10px 20px 20px 5px;
+}
+
+
+a {
+	font-size:14px;
+	text-decoration:none;
+	font-family:arial;
+	color:#538ea4;
+}
+
+
+a.menu {
+	font-size:14px;
+	text-decoration:none;
+	font-family:arial;
+	color:#538ea4;
+	border-bottom: 1px dotted #33525e;
+}
+ 
+a.menu:link {  }
+a.menu:visited {  }
+a.menu:hover {color:#538ea4; font-weight: bold;font-style: italic; border-bottom: 1px dotted #33525e; }
+a.menu:active { }
+
+
+/* Les liens "boutons de commande" */
+a.command:link, a.command:visited, a.command:hover, a.command:active  {
+	color : #33525e; /* blue foncé */
+	text-decoration: none;
+	font-weight: normal;
+	font-style: normal;
+	border: none;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 1px;
+}
+
+
+fieldset {
+	border: 2px solid white; padding: 12px;
+}
+
+textarea, input, select, file {
+	background-color: #fff;
+}
+
+
+h1{
+	text-align: center;
+	font-size: 24px;
+	padding-top: 15px;
+	border-bottom: 2px dashed #a4d7ec;
+	margin:0; padding:0;
+	color: #414141;
+}
+
+h1.h1menu {
+	border-bottom: 1px solid #a4d7ec;
+	margin-bottom: 0px;
+	padding: 0;
+	text-align:center;
+	color: #33525e;
+}
+
+h2 {
+	margin: 0 0 5px 0;
+	padding: 0;
+	text-align: center;
+	color: #fff;
+	color: #33525e;
+	background-color: #ff1693; /* rose */
+	background-color: orange; /* rose */
+	background-color: #cbf0ff; /* rose */
+	font-size: 18px;
+}
+
+div.spacer {
+	clear: both;
+	visibility: hidden;
+	margin:0; padding:0;
+}
+
+a img, img {
+	border: none;
+}
+
+
+input, select, textarea {
+
+	border: 1px solid #bbbbbb;
+}
+
+select {
+
+	background-color:#f9feff;
+}
+
+
+
+
+
+/****************************************************************************************
+ STRUCTURE DES PAGES
+*******************************************************************************************/
+
+body {
+	padding:0;
+	margin:10px;
+}
+
+/* Le conteneur principal */
+div#page {
+	width:100%;
+	margin:0; padding:0;
+	margin-left:auto; margin-right: auto;
+	background-color:#fff;
+}
+
+div#header {
+	margin:0; padding:0;
+}	
+
+/* Les arrondis du header  */
+div#header img#left_corner { 
+	float:left;
+}
+div#header img#right_corner { 
+	float:right; 
+}
+
+
+
+
+/* Le menu (colonne gauche)  */
+div#page div#menu {
+	left:0px;
+	width:200px;
+	position:absolute;
+	border:1px solid #a4d7ec;
+	text-align:left;
+	background-color: #fbf399;
+	background-color: #f6fdff;
+	margin-left: 15px;
+	margin-top: 15px;
+	padding-bottom: 5px;
+	
+}
+
+div#menu p.menuTitres {
+	font-weight: bold;
+	text-indent: 5px;
+	margin: 0px;
+	padding: 0px;
+	margin-top: 15px;
+	color: #33525e;
+	color: #33525e;
+}
+div#menu p.menuSeparateur {
+	border-top: 1px dashed #a4d7ec;
+	margin-top: 15px;
+	padding-top: 10px;
+}
+
+
+div#menu ul {  /*  listes du menu */
+	margin: 0px 0 0 25px;
+	padding:0;
+}
+div#menu ul li {  /*  listes du menu */
+	list-style-type: circle;
+}
+
+
+/* Le contenu (colonne droite)  */
+div#page div#contenu {
+	margin: 0 10px 0px 215px;
+	padding-top:15px;
+}
+
+
+
+
+/* Les arrondis du footer  */
+div#footer { 
+	text-align: right;
+	margin:0;
+	margin-top: 10px;
+	padding: 5px 10px 5px 10px;
+	border-top: 2px dashed #a4d7ec;
+}
+div#footer a {
+	border: none;
+}
+
+
+
+
+
+
+
+
+/* le tableau de la liste */
+table.liste {
+	width:100%;
+	border: 1px solid #838383;
+	border-bottom: 2px solid #838383;
+	border-right: 2px solid #838383;
+}
+table.liste thead th {
+	border-bottom: 1px solid #838383;
+	background-color: #f6fdff;
+}
+table.liste tfoot th {
+	background-color: #f6fdff;
+}
+
+
+table.liste td, table.liste th {
+	border: 1px solid #dedede;
+	border-bottom: none;
+	border-right: none;
+}
+
+
+.o2k7SkinSilver .mceIframeContainer {
+	border-right: 1px solid #bbb ;
+}
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************************************************
+BARRE DE PAGINATION    
+*******************************************************************************************/
+
+
+/* Les barres de navigation */
+div.navig {
+	border: 1px solid #a4d7ec; /* rose */
+	margin-top: 15px;
+}
+div.navig ul {
+	list-style-type: none;
+	margin:0; padding:0;
+}
+div.navig ul li {
+	display: inline;
+}
+
+/* Barres de navigation : liens */
+
+div.navig ul li a:link, div.navig ul li a:visited {
+	color : #33525e; /* rose */
+	text-decoration: none; 
+	font-weight: normal;
+	font-style: normal;
+	border: none;
+}
+div.navig ul li a:hover, div.navig ul li a:active {
+	color : #33525e; /* rose */
+	text-decoration: none; 
+	font-weight: normal;
+	font-style: normal;
+	border: none;
+}
+
+/* Barres de navigation : page en cours */
+div.navig ul li span {
+	color: #fff;
+	background-color: #33525e; /* rose */
+	font-weight: bold;
+}
