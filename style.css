@@ -4141,13 +4141,13 @@
 		display: block;
 		font-family: Montserrat !important;
 	}
-
-
-
-
-
-
-
+/* partie faq */
+.tableau_accueil{ margin-top: 10rem;}
+.partiefaq{ display: flex; justify-content: space-around; margin-top: 5rem;}
+.form-eddit{display: flex; justify-content: center;}
+.input-faq{width: 300px;  background-color:#fafafa;}
+.input-add{width: 300px; background-color:#fafafa;}
+.btn-ajouter{margin-left: 0.5rem;}
 
 
 
