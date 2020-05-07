@@ -4142,13 +4142,17 @@
 		font-family: Montserrat !important;
 	}
 /* partie faq */
-.tableau_accueil{ margin-top: 10rem;}
-.partiefaq{ display: flex; justify-content: space-around; margin-top: 5rem;}
-.form-eddit{display: flex; justify-content: center;}
+.faq_pharmacie{margin-top: 10px;}
+.quest_faq{margin-bottom: 3rem;}
+.nav-btn{ display: flex; justify-content: space-around; margin-top: 5rem;}
+.table_faq{display: flex; justify-content: center; margin-top: 10rem;}
 .input-faq{width: 300px;  background-color:#fafafa;}
-.input-add{width: 300px; background-color:#fafafa;}
+/* partie eddit_faq */
+.textaera_eddit{background-color: #fafafa;margin-right: 3rem; height: 3rem;}
+.text-span{margin-right: 0.5rem;}
+/* partie add_faq */
+.input_add_faq{width: 500px; background-color:#fafafa; margin-right: 3rem;}
 .btn-ajouter{margin-left: 0.5rem;}
-
 
 
 

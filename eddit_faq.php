@@ -7,7 +7,7 @@
     <title>modifier une question</title>
 </head>
 <body>
-<div class="partiefaq">
+<div class="nav-btn">
 
 <?php 
 
@@ -18,7 +18,7 @@ echo "<button><a href='faq.php'>Retour aux questions</a></button>";
 ?>
 </div> 
 <?php 
-echo "<h2>Modifier la question </h2>";
+echo "<h2 class='table_faq'>Modifier la question ou la réponse</h2>";
 session_start ();
     
 $connection = new PDO('mysql:host=localhost:3308;dbname=WebGroup_test', 'root', '');
@@ -26,11 +26,11 @@ $connection = new PDO('mysql:host=localhost:3308;dbname=WebGroup_test', 'root', 
     $req = $connection->query($sql);   
     
     
-    echo "<form action='' method='post' class='form-eddit'>";
+    echo "<form action='' method='post' class='table_faq'>";
     while ($row=$req->fetch()){
     
-        echo $row['id']." <input type='textaera' name ='question' class='input-faq' value=' ".$row['question']." '>";
-      
+        echo "<span class='text-span'>Question</span> <input type='text' name ='question' class='input_add_faq' value=' ".$row['question']." '>";
+        echo "<span class='text-span'>Réponse</span> <input type='text' name ='reponse' class='input_add_faq' value=' ".$row['reponse']." '>";
         
     }
     echo "<input type='submit' value='modifier'>";
@@ -46,8 +46,16 @@ $connection = new PDO('mysql:host=localhost:3308;dbname=WebGroup_test', 'root', 
         $stmt->execute();
     
     }
+     
+    if(isset($_POST['reponse'])){
+        
+        $update="UPDATE FAQ SET reponse='".$_POST['reponse']."' WHERE id=".$_GET['question']." ";   
+        $stmt = $connection->prepare($update);
+        $stmt->execute();
+    
+    }
     
     if(isset($_POST['question'])) {
         header("Location:faq.php");
         }
-           
+  

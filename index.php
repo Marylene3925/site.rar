@@ -416,38 +416,7 @@
                             
 							<span style="color:#ff0000; font-size:20px;">Consultez notre FAQ </span>
                           
-                            <button id="togg1">Cliquez-moi !</button>
-                                <button id="togg2">Cliquez-moi !</button>
-                                <div id="d1">
-                                    <p>Ce texte appartient au premier div de ma page</p>
-                                    <p>Ce deuxième paragraphe également</p>
-                                </div>
-                                <div id="d2">
-                                    <p>Il existe deux façons de cacher un élément <span>comme un div</span> en CSS :</p>
-                          
-                                <script>
-                                    let togg1 = document.getElementById("togg1");
-                                    let togg2 = document.getElementById("togg2");
-                                    let d1 = document.getElementById("d1");
-                                    let d2 = document.getElementById("d2");
-                                    togg1.addEventListener("click", () => {
-                                    if(getComputedStyle(d1).display != "none"){
-                                        d1.style.display = "none";
-                                    } else {
-                                        d1.style.display = "block";
-                                    }
-                                    })
-
-                                    function togg(){
-                                    if(getComputedStyle(d2).display != "none"){
-                                        d2.style.display = "none";
-                                    } else {
-                                        d2.style.display = "block";
-                                    }
-                                    };
-                                    togg2.onclick = togg;
-                                </script>
-                            <div>
+                            
                                 <?php
 
                                 $connection = new PDO('mysql:host=localhost:3308;dbname=WebGroup_test', 'root', '');
@@ -455,23 +424,21 @@
                                 $sql="SELECT * FROM FAQ ";
                                 $req = $connection->query($sql); 
                                 
-                                echo "<table class='tableau_accueil' style='margin-top: 15px'>";
+                                echo "<div class='faq_pharmacie' style='margin-top: 15px'>";
                                 
-                                echo "<th>";
                                 
-                                echo "<tr>";
                                 
                                 while ($row=$req->fetch()){    
-                                    //var_dump($row);
-                                    
-                                    echo "<td><ul>".'<img src="https://img.icons8.com/material/24/000000/diamond.png"/>'."</ul></td>";
-                                    echo "<td><ul>"."  ".$row['question']."</ul></td>";                                   
+                                    //var_dump($row);                                    
+                                   
+                                    echo "<div>".'<img src="https://img.icons8.com/material/24/000000/diamond.png"/>'."  ".$row['question']."</div><br>";  
+                                    echo "<div  class='quest_faq'>"."  ".$row['reponse']."</div>";                                 
                                     echo "</tr>";                                    
                                 }
-                                    echo "</table>";   
+                                    echo "</div>";   
                                     
                                 ?>
-                            </div>
+                            
                             
 							
                         </div><!-- end common-height -->

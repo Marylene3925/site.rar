@@ -11,7 +11,7 @@
  </head>
  <body>
  
- <div class="partiefaq">
+ <div class="nav-btn">
 
  <?php 
  
@@ -22,7 +22,7 @@ echo "<button><a href='add_faq.php'>Ajouter une question</a></button>";
 ?>
 </div> 
 <?php 
-echo "<h2>Récapitulatif des questions</h2>";
+echo "<h2 class='table_faq'>Récapitulatif des questions et des réponses</h2>";
  session_start ();
      
  $connection = new PDO('mysql:host=localhost:3308;dbname=WebGroup_test', 'root', '');
@@ -30,7 +30,7 @@ echo "<h2>Récapitulatif des questions</h2>";
    $sql="SELECT * FROM FAQ ";
    $req = $connection->query($sql); 
    
-   echo "<table class='tableau_accueil' style='margin-top: 15px'>";
+   echo "<table class='table_faq'>";
  
    echo "<th>";
  
@@ -39,8 +39,9 @@ echo "<h2>Récapitulatif des questions</h2>";
    while ($row=$req->fetch()){    
     //  var_dump($row);
     
-     echo "<td><ul>".$row['id']."</ul></td>";
-     echo "<td><ul>."." ".$row['question']."</ul></td>";     
+     echo "<td><ul>"."</ul></td>";
+     echo "<td><ul>"." ".$row['question']." "." <br>" .$row['reponse']."</ul></td>";  
+        
    
      echo "<td><ul><button><a href=eddit_faq.php?question=".$row['id'].">Modifier</a></button></ul></td>";
      echo "<td><ul><button><a href=delete_faq.php?question=".$row['id'].">Supprimer</a></button></ul></td>";
