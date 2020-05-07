@@ -414,10 +414,11 @@
                             </div><!-- end title -->
 
                             
-							<span style="color:#ff0000; font-size:20px;">Consultez notre FAQ </span>
-                          
+                            <span style="color:#ff0000; font-size:20px;">Consultez notre FAQ </span>                            
                             
+
                                 <?php
+                            
 
                                 $connection = new PDO('mysql:host=localhost:3308;dbname=WebGroup_test', 'root', '');
 
@@ -431,14 +432,25 @@
                                 while ($row=$req->fetch()){    
                                     //var_dump($row);                                    
                                    
-                                    echo "<div>".'<img src="https://img.icons8.com/material/24/000000/diamond.png"/>'."  ".$row['question']."</div><br>";  
-                                    echo "<div  class='quest_faq'>"."  ".$row['reponse']."</div>";                                 
+                                    echo "<button onclick='myFunction()'>".'<img src="https://img.icons8.com/material/24/000000/diamond.png"/>'."  ".$row['question']."</button><br>";  
+                                    echo "<div class='quest_faq' id='demo'>"."  ".$row['reponse']."</div>";                                 
                                     echo "</tr>";                                    
                                 }
-                                    echo "</div>";   
+                                    echo "</div>";  
+                                     
                                     
                                 ?>
-                            
+                           
+
+                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                            <script>
+                            $(document).ready(function(){
+                            $("button").click(function(){
+                                $("#demo").toggle();
+                            });
+                            });
+                            </script>
+                           
                             
 							
                         </div><!-- end common-height -->
